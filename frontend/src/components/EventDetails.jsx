@@ -4,7 +4,7 @@ import useFetch from '../useFetch';
 import { Link } from 'react-router-dom'
 
 const EventDetails = () => {
-    const {data, loading, error} = useFetch("http://localhost:3001/events")
+    const {data, loading, error} = useFetch("https://meetup-app-new.vercel.app/events")
     const { eventId } = useParams()
 
     if (loading) return <p>Loading...</p>;

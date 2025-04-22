@@ -5,7 +5,7 @@ import Header from "./Header";
 import { Link, useParams } from 'react-router-dom'
 
 const AllEvent = () => {
-    const {data, loading, error} = useFetch("http://localhost:3001/events")
+    const {data, loading, error} = useFetch("https://meetup-app-new.vercel.app/events")
     const [filteredEvents, setFilteredEvents] = useState([])
     const [searchInput, setSearchInput] = useState("")
 
