@@ -53,14 +53,14 @@ return(
                     <p>&#8377;  {selectedEvent.price}</p>
                 </div>
 
-                {/* <div className='py-4'>
+                <div className='py-4'>
                     <h5 className='fw-bold'>Speakers: ({selectedEvent.speakers.length})</h5>
-                    {
+                    {/* {
                         selectedEvent.speakers.map((speaker) => (
                             <h6>{speaker}</h6>
                         ))
-                    }
-                </div> */}
+                    } */}
+                </div>
 
             </div>
         </div>
