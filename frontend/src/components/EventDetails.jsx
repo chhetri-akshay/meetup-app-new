@@ -60,12 +60,12 @@ return(
                         selectedEvent.speakers.map((speaker) => (
                             <div className='col-md-6'>
                                 <div className='card'>
-                                <img src={`/profileImages/${speaker.imageUrl}`} class="card-img-top"/>
+                                <img src={`/profileImages/${speaker.imageUrl}`} class="card-img-top" style={{ width: '100%', height: '150px', objectFit: 'cover' }}/>
                                     <div className="card-body">
-                                        <div className="card-title">
+                                        <div className="card-title p-0">
                                             <h6>{speaker.name}</h6>
                                         </div>
-                                        <div className="card-text">
+                                        <div className="card-text p-0">
                                             <p className='fw-bold'>{speaker.designation}</p>
                                         </div>
                                     </div>
