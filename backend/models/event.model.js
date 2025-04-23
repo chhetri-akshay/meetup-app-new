@@ -1,23 +1,23 @@
 const mongoose = require("mongoose")
 
-const speakerSchema = new mongoose.Schema({
-    id: {
-        type: String,
-        required: true,
-    },
-    name: {
-        type: String,
-        required: true,
-    },
-    designation: {
-        type: String,
-        required: true,
-    },
-    imageUrl: {
-        type: String,
-        required: true,
-    },
-})
+// const speakerSchema = new mongoose.Schema({
+//     id: {
+//         type: String,
+//         required: true,
+//     },
+//     name: {
+//         type: String,
+//         required: true,
+//     },
+//     designation: {
+//         type: String,
+//         required: true,
+//     },
+//     imageUrl: {
+//         type: String,
+//         required: true,
+//     },
+// })
 
 const EventsSchema = new mongoose.Schema({
     name: {
@@ -67,7 +67,9 @@ const EventsSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    speakers: [speakerSchema]
+    speakers: [{
+        type: String
+    }]
 }, {timestamps: true})
 
 const Events = mongoose.model("Events", EventsSchema)
