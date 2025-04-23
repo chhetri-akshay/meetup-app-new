@@ -55,11 +55,26 @@ return(
 
                 <div className='py-4'>
                     <h5 className='fw-bold'>Speakers: ({selectedEvent.speakers.length})</h5>
-                    {/* {
+                    <div className='row'>
+                    {
                         selectedEvent.speakers.map((speaker) => (
-                            <h6>{speaker}</h6>
+                            <div className='col-md-6'>
+                                <div className='card'>
+                                <img src="" class="card-img-top"/>
+                                    <div className="card-body">
+                                        <div className="card-title">
+                                            <h6>{speaker.name}</h6>
+                                        </div>
+                                        <div className="card-text">
+                                            <p>{speaker.designation}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         ))
-                    } */}
+                    }
+                    </div>
+                    
                 </div>
 
             </div>
